@@ -1,9 +1,12 @@
+import { HeaderWrapper } from "myapp/component/Header";
 import Image from "next/image";
-import { HeaderWrapper } from "../component/Header";
 
-export default function Home() {
+export function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <div>
+        <h1>Practice</h1>
+      </div>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <HeaderWrapper />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
