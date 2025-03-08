@@ -3,7 +3,6 @@ import Image from "next/image";
 interface HeaderProps {
   HeadText: string;
 }
-
 export function HeaderWrapper({ HeadText }: HeaderProps) {
     return(
       <>
