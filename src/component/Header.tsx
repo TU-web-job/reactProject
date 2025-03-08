@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import React from "react";
 interface HeaderProps {
   HeadText: string;
 }
@@ -19,4 +19,5 @@ export function HeaderWrapper({ HeadText }: HeaderProps) {
         </header>
       </>
     );
+
 }
