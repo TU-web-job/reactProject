@@ -2,6 +2,7 @@ import React from "react";
 import { HeaderWrapper } from "myapp/component/Header";
 import { FooterComponent } from "myapp/component/Footer";
 import { Main } from "myapp/component/Main"
+import { SubmitButton } from "myapp/component/SubmitButton";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
     <HeaderWrapper HeadText="Page!!" />
       <Main />
       <FooterComponent />
+      <SubmitButton Message="Init Click" alertMessage="Success!!!" />
     </div>
     </>
   );
