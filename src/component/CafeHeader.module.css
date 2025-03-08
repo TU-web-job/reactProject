@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.text {
+    margin-bottom: 15px;
+    color: rgb(119, 73, 4);
+    font-size: 20px;
+}
+.headerList{
+    display: flex;
+    justify-content: right;
+}
+.list {
+    display: flex;
+    list-style: none;
+}
+
+.list li {
+    margin-right: 10px;
+}

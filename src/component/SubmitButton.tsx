@@ -13,3 +13,13 @@ export function SubmitButton({ Message, alertMessage }: ButtonProps) {
     </button>
   );
 }
+
+interface CafeButtonProps {
+  config: string;
+}
+
+export function CafeButton({ config }: CafeButtonProps) {
+  return (
+    <button type="submit" onClick={() => alert("getConfig")}>{config}</button>
+  );
+}
