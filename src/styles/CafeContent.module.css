@@ -25,10 +25,18 @@
 }
 
 .plus:hover,
-.minus:hover,
 .plus:focus,
+.plus:active {
+    color: #fff;
+    background-color: #0070f4;
+    border:none;
+}
+
+
+.minus:hover,
 .minus:focus,
-.plus:active,
-.minus:active {
-    color: #0070f4;
+.minus:active{
+    color: #fff;
+    background-color:#f00;
+    border: none;
 }
