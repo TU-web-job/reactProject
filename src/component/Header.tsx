@@ -1,7 +1,12 @@
 import Image from "next/image";
 
-export function HeaderWrapper(){
+interface HeaderProps {
+  HeadText: string;
+}
+
+export function HeaderWrapper({ HeadText }: HeaderProps) {
     return(
+      <>
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -10,6 +15,9 @@ export function HeaderWrapper(){
           height={38}
           priority
         />
+        <header>
+          <h1>{HeadText}</h1>
+        </header>
+      </>
     );
-
 }
