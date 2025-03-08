@@ -1,3 +1,4 @@
+import React from "react";
 import { HeaderWrapper } from "myapp/component/Header";
 import Image from "next/image";
 
