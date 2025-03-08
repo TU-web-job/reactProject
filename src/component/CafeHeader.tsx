@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./CafeHeader.module.css";
+import style from "../styles/CafeHeader.module.css";
 
 interface headerText {
     header:String;
