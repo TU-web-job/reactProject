@@ -1,3 +1,8 @@
+.footer {
+    margin-top: 20px;
+    width: 100%;
+}
+
 .cafeFooter {
     display: flex;
     justify-content: center;
@@ -15,4 +20,12 @@
 
 .list {
     margin-right: 10px;
+    border-bottom: 0.5px solid #eaeaea;
+}
+
+.list:hover,
+.list:focus,
+.list:active {
+    color: #0070f3;
+    border: color #0070f3;
 }

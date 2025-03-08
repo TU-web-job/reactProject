@@ -1,23 +1,28 @@
 .header{
-    display: flex;
-    justify-content: center;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 .text {
-    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
     color: rgb(119, 73, 4);
-    font-size: 20px;
+    font-size: 2rem;
 }
-.headerList{
+.footerList {
     display: flex;
     justify-content: right;
-}
-.list {
-    display: flex;
     list-style: none;
 }
 
-.list li {
-    margin-right: 10px;
+.list {
+    margin-right: 15px;
+    border-bottom: 0.5px solid #eaeaea;
+}
+
+.list:hover,
+.list:focus,
+.list:active {
+    color: #0070f3;
+    border-color: #0070f3;
 }

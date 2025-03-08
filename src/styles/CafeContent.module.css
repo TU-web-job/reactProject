@@ -1,0 +1,34 @@
+.contentsTitle {
+    color: brown;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.drinkMenu,
+.foodMenu {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.menuContents {
+    display: inline-block;
+    justify-content: center;
+    padding: 15px;
+}
+
+.plus,
+.minus {
+    border: 1px solid #000;
+    margin: 3px;
+}
+
+.plus:hover,
+.minus:hover,
+.plus:focus,
+.minus:focus,
+.plus:active,
+.minus:active {
+    color: #0070f4;
+}

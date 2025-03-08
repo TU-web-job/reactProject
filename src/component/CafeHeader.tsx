@@ -1,5 +1,6 @@
 import React from "react";
 import style from "../styles/CafeHeader.module.css";
+import Link from "next/link";
 
 interface headerText {
     header:String;
@@ -10,17 +11,13 @@ interface headerText {
 
 export function CafeHeader({header,list_A,list_B,list_C}:headerText){
     return(
-        <>
         <div className={style.header}>
-            <h1 className={style.text}>{header}</h1>
+                <h1 className={style.text}>{header}</h1>
+                <ul className={style.footerList}>
+                    <Link href="/" className={style.list}>{list_A}</Link>
+                    <Link href="https://www.google.com/" className={style.list}>{list_B}</Link>
+                    <Link href="#" className={style.list}>{list_C}</Link>
+                </ul>
         </div>
-        <div className={style.headerList}>
-            <ul className={style.list}>
-                <li><a href="#">{list_A}</a></li>
-                <li><a href="#">{list_B}</a></li>
-                <li><a href="#">{list_C}</a></li>
-            </ul>
-        </div>
-        </>
     );
 } 
