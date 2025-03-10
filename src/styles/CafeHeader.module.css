@@ -9,7 +9,7 @@
     color: rgb(119, 73, 4);
     font-size: 2rem;
 }
-.footerList {
+.headerList {
     display: flex;
     justify-content: right;
     list-style: none;
@@ -25,4 +25,8 @@
 .list:active {
     color: #0070f3;
     border-color: #0070f3;
+}
+
+.list:active {
+    box-shadow: 3px 5px 0 #0070f3;
 }

@@ -7,10 +7,7 @@ export default function cafe(){
     return(
         <>
         <CafeHeader 
-        header="Cafe Top Page"
-        list_A={"問い合わせ"}
-        list_B={"会社概要"}
-        list_C={"採用情報"} />
+        header="Cafe Top Page" />
         <CafeButton config={"Click Here"} />
         <CafeMenu />
         <CafeFooter />

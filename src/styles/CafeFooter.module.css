@@ -1,6 +1,7 @@
 .footer {
     margin-top: 20px;
     width: 100%;
+    padding: 20px;
 }
 
 .cafeFooter {
@@ -15,6 +16,7 @@
 .footerList {
     display: flex;
     margin-top: 10px;
+    margin-right: 10px;
     justify-content: right;
 }
 

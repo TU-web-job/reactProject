@@ -6,30 +6,110 @@
 }
 
 .drinkMenu,
-.foodMenu {
-    width: 80%;
+.foodMenu,
+.btnSubmit {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .menuContents {
-    display: inline-block;
+    display: flex; 
+    flex-direction: column;
     justify-content: center;
     padding: 15px;
 }
 
+.menuContent {
+    display: flex;
+    justify-content: center;
+    color:darksalmon;
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+
+.btnWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.btnSubmitWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.btnConfig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 35px;
+    color: #fff;
+    background-color: #0070f4;
+    border: 1px solid #0070f4;
+    margin-right: 15px;
+}
+
+.btnReset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 35px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #f00;
+    border: 1px solid #f00;
+}
+
+.btnConfig:hover,
+.btnConfig:focus,
+.btnConfig:active {
+    color: #0070f4;
+    background-color: #fff;
+    border: 1px solid #0070f4;
+}
+
+.btnReset:hover,
+.btnReset:focus,
+.btnReset:active {
+    color: #f00;
+    background-color: #fff;
+    border: 1px solid #f00;
+}
+
 .plus,
 .minus {
-    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
     margin: 3px;
+    cursor: pointer;
 }
+
+.plus {
+    color: #0070f4;
+    border: 1px solid #0070f4;
+}
+
+.minus {
+    color: #f00;
+    border: 1px solid #f00;
+}
+
+
 
 .plus:hover,
 .plus:focus,
 .plus:active {
     color: #fff;
     background-color: #0070f4;
-    border:none;
+    border:1px solid #0070f4;
 }
 
 
@@ -38,5 +118,5 @@
 .minus:active{
     color: #fff;
     background-color:#f00;
-    border: none;
+    border: 1px solid #f00;
 }
