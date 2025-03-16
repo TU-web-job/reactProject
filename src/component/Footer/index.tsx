@@ -1,5 +1,5 @@
 import Link from "next/link";
-import style from "../styles/CafeFooter.module.css"
+import style from "/src/component/Footer/CafeFooter.module.css"
 
 export function CafeFooter(){
     return (

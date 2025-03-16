@@ -1,0 +1,70 @@
+.companyInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table {
+    max-width: 80%;
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.th, .td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.th {
+    width: 30%;
+    background-color: #a9a9a9;
+}
+
+.td {
+    width: 70%;
+}
+
+.storeWrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 2px solid #ddd;
+}
+
+.storeHeader {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    align-self: flex-start;
+}
+
+.storeList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 2px solid #ddd;
+}
+
+.storeText {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.storeContent {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.storeMap {
+    width: 100%;
+    height: 450px;
+    padding: 30px;
+}
+

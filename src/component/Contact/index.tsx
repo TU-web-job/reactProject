@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../styles/CafeContact.module.css";
+import style from "/src/component/Contact/CafeContact.module.css";
 import { title } from "process";
 
 const CONTACT = [
@@ -21,13 +21,13 @@ export function CafeContact(){
                         return (
                             <tr key={index} className={style.tr}>
                             <th className={style.th}>{title}</th>
-                            <td className={style.td}><input type="text" className={style.input} placeholder={holder} /></td>
+                            <td className={style.td}><input type="text" className={style.input} placeholder={holder} required/></td>
                             </tr>
                         );                
                     })}
                 <tr className={style.tr}>
                     <th className={style.th}>Something Here</th>
-                    <td className={style.td}><textarea className={style.textarea} placeholder="お問い合わせ内容"></textarea></td>
+                    <td className={style.td}><textarea className={style.textarea} placeholder="お問い合わせ内容" required></textarea></td>
                 </tr>
                 </tbody>
             </table>

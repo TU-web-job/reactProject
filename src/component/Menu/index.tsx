@@ -1,6 +1,6 @@
 "use client"
 import React, {useState} from "react";
-import style from "../styles/CafeContent.module.css";
+import style from "/src/component/Menu/CafeContent.module.css";
 
 const DRINK = [
     {title: "Cafe Latte", price: "$4"},

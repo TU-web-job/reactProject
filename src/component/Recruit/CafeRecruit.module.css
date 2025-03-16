@@ -1,0 +1,90 @@
+.header {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.tableContent {
+    width: 80%;
+}
+
+.tr {
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.td, .th {
+    padding: 15px;
+}
+
+.th {
+    border-right: 1px solid #ddd;
+    background-color: #9a9a9a;
+    color: #fff;
+    width:30%;
+}
+
+.td {
+    width: 70%;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formGroup {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6px;
+}
+
+.formGroup input,.formGroup select {
+    border: 1px solid #9a9a9a;
+    border-radius: 4px;
+}
+
+.formText {
+    width: 45%;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #9a9a9a;
+}
+
+.submitButton:hover,.submitButton:focus,.submitButton:active {
+    border: 1px solid #9a9a9a;
+    background-color: #fff;
+    color:#9a9a9a;
+    cursor: pointer;
+}
+
+.submitButton:active {
+    box-shadow: 3px 5px 0 #9a9a9a;
+}
