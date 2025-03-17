@@ -9,6 +9,16 @@
     color: rgb(119, 73, 4);
     font-size: 2rem;
 }
+
+.headerTop{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.top {
+    border-bottom: 0.5px solid #eaeaea;
+}
+
 .headerList {
     display: flex;
     justify-content: right;
@@ -22,11 +32,14 @@
 
 .list:hover,
 .list:focus,
-.list:active {
+.list:active,
+.top:hover,
+.top:focus,
+.top:active {
     color: #0070f3;
     border-color: #0070f3;
 }
 
-.list:active {
+.list:active, .top:active {
     box-shadow: 3px 5px 0 #0070f3;
 }

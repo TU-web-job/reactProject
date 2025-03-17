@@ -9,7 +9,6 @@ export default function cafe(){
         <CafeHeader 
         header="Cafe Top Page" />
         <CafeButton config={"Click Here"} />
-        <CafeMenu />
         <CafeFooter />
         </>
     );
