@@ -1,6 +1,5 @@
 import React from "react";
 import style from "/src/component/Contact/CafeContact.module.css";
-import { title } from "process";
 
 const CONTACT = [
     {title:"Name",holder:"XXX YYY"},

@@ -6,16 +6,23 @@ interface headerText {
     header:String;
 }
 
+const LINK = [{href:"/cafe/contact",title:"問い合わせ"},
+    {href:"/cafe/companyInfo",title:"会社情報"},
+    {href:"/cafe/recruit",title:"採用情報"},
+    {href:"/cafe/menu",title:"Menu Page"}
+]
+
 export function CafeHeader({header}:headerText){
     return(
         <div className={style.header}>
                 <h1 className={style.text}>{header}</h1>
                 <div className={style.headerTop}><Link href="/cafe" className={style.top}>Top Page</Link></div>
                 <ul className={style.headerList}>
-                    <Link href="/cafe/contact" className={style.list}>問い合わせ</Link>
-                    <Link href="/cafe/companyInfo" className={style.list}>会社情報</Link>
-                    <Link href="/cafe/recruit" className={style.list}>採用情報</Link>
-                    <Link href="/cafe/menu" className={style.list} >Menu Page</Link>
+                    {LINK.map(({href,title}) => {
+                        return(
+                            <Link href={href} className={style.list}>{title}</Link>
+                        );
+                    })}
                 </ul>
         </div>
     );

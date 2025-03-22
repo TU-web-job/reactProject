@@ -4,12 +4,14 @@ import style from "/src/component/Menu/CafeContent.module.css";
 
 const DRINK = [
     {title: "Cafe Latte", price: "$4"},
-    {title: "espresso", price: "$2.5"}
+    {title: "espresso", price: "$2.5"},
+    {title: "Caramel Macchiato", price: "$4.5"}
 ]
 
 const FOOD = [
     {title: "Sandwich", price: "$3.5"},
-    {title: "Pasta", price: "$4.5"}
+    {title: "Pasta", price: "$4.5"},
+    {title: "Hamburger", price: "$5"}
 ]
 
 export function CafeMenu(){
@@ -20,6 +22,15 @@ export function CafeMenu(){
             ...prev,
             [title]:Math.max(0,(prev[title] || 0) + delta),
         }));
+    };
+
+    const getTotalCount = () => {
+        return Object.values(itemCounts).reduce((acc,count) => acc + count, 0);
+    };
+    
+    const handleClick = () => {
+        const totalCount = getTotalCount();
+        alert(`合計数: ${totalCount}`);
     };
 
 
@@ -63,8 +74,8 @@ export function CafeMenu(){
         })}
         </div>
         <div className={style.btnSubmitWrapper}>
-            <button type="submit" className={style.btnConfig}><label className={style.btnText}>確 認</label></button>
-            <button type="reset" className={style.btnReset}><label className={style.btnText}>リセット</label></button>
+            <button type="button" className={style.btnReset} onClick={() => setItemCount({})}><label className={style.btnText}>リセット</label></button>
+            <button type="button" className={style.btnConfig} onClick={() => handleClick()}><label className={style.btnText}>確 認</label></button>
         </div>
         </>
     );
