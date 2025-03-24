@@ -5,8 +5,8 @@ import style from "/src/component/Menu/CafeContent.module.css";
 const DRINK = [
     {title: "Cafe Latte", price: "$4"},
     {title: "espresso", price: "$2.5"},
-    {title: "Caramel Macchiato", price: "$4.5"},
-    {title:"Lemonedo", price:"$3.5"}
+    {title: "Caramel Machiato", price: "$4.5"},
+    {title: "Lemonade", price: "$3.5"}
 ]
 
 const FOOD = [
