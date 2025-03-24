@@ -3,7 +3,7 @@ import style from "/src/component/Header/CafeHeader.module.css";
 import Link from "next/link";
 
 interface headerText {
-    header:String;
+    header:string;
 }
 
 const LINK = [{href:"/cafe/contact",title:"問い合わせ"},
@@ -18,9 +18,9 @@ export function CafeHeader({header}:headerText){
                 <h1 className={style.text}>{header}</h1>
                 <div className={style.headerTop}><Link href="/cafe" className={style.top}>Top Page</Link></div>
                 <ul className={style.headerList}>
-                    {LINK.map(({href,title}) => {
+                    {LINK.map(({href,title},index) => {
                         return(
-                            <Link href={href} className={style.list}>{title}</Link>
+                            <Link href={href} className={style.list} key={index}>{title}</Link>
                         );
                     })}
                 </ul>
