@@ -20,7 +20,7 @@ export function CafeHeader({header}:headerText){
                 <ul className={style.headerList}>
                     {LINK.map(({href,title},index) => {
                         return(
-                            <Link href={href} className={style.list} key={index}>{title}</Link>
+                            <Link href={href} key={index} className={style.list}>{title}</Link>
                         );
                     })}
                 </ul>
