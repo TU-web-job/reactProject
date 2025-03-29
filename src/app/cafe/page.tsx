@@ -7,7 +7,7 @@ export default function cafe(){
         <>
         <CafeHeader 
         header="Cafe Top Page" />
-        <CafeButton config={"Click Here"} />
+        <p>this is my portfolio</p>
         <CafeFooter />
         </>
     );
